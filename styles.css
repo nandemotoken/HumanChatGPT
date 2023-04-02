@@ -112,15 +112,31 @@ header p {
 
 /* ポエムセクション */
 #poem {
-  background: linear-gradient(to right, #ff1a75, #ff6666, #ff9933, #ffff33, #33cc33);
-  color: #fff;
+  background-color: #f2f2f2;
+  color: #333;
   text-align: center;
   padding: 50px;
+  border-radius: 10px;
 }
 
 #poem p {
   animation: bounce-in 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
   padding: 20px 0;
+}
+
+#poem p:nth-child(odd) {
+  transform: rotate(-1deg);
+}
+
+#poem p:nth-child(even) {
+  transform: rotate(1deg);
+}
+
+#poem p:hover {
+  background-color: #333;
+  color: #f2f2f2;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 @keyframes bounce-in {
