@@ -171,3 +171,18 @@ font-size: 1.1rem;
 .submit-button button:hover {
   background-color: #333;
 }
+.message-history {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: left;
+}
+
+.message-history h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.message-history li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
