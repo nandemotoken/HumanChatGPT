@@ -62,5 +62,24 @@
 <footer>
 © 2023 人力版ChatGPT. All rights reserved.
 </footer>
+  <script>
+  document.querySelector(".submit-button button").addEventListener("click", function() {
+    const userMessage = document.getElementById("user-message").value.trim();
+    if (userMessage.length > 0) {
+      addMessageToHistory(userMessage);
+      document.getElementById("user-message").value = "";
+    } else {
+      alert("メッセージを入力してください。");
+    }
+  });
+
+  function addMessageToHistory(message) {
+    const messageList = document.getElementById("message-list");
+    const newMessage = document.createElement("li");
+    newMessage.textContent = message;
+    messageList.appendChild(newMessage);
+  }
+</script>
+
 </body>
 </html>
