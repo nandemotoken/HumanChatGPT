@@ -93,7 +93,6 @@ header p {
 }
 
 #how-to-use ol {
-  counter-reset: step;
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -104,7 +103,6 @@ header p {
 #how-to-use li {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  position: relative;
   flex-basis: 45%;
   padding: 1rem;
   background-color: #fff;
@@ -112,20 +110,25 @@ header p {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-#how-to-use li:before {
-  counter-increment: step;
-  content: counter(step);
-  position: absolute;
-  left: -2rem;
-  font-size: 1.5rem;
-  color: #333;
+/* ポエムセクション */
+#poem {
+  padding: 4rem;
+  background-color: #fff;
+  text-align: center;
+  font-style: italic;
 }
 
-/* フッター */
+#poem p {
+  font-size: 1.2rem;
+line-height: 1.8;
+margin-bottom: 1.5rem;
+}
+
+/* フッターセクション */
 footer {
-  background-color: #1c1c1c;
-  padding: 1rem;
-  text-align: center;
-  color: #fff;
-  font-size: 1.1rem;
+background-color: #1c1c1c;
+padding: 1rem;
+text-align: center;
+color: #fff;
+font-size: 1.1rem;
 }
